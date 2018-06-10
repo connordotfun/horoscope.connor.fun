@@ -23,11 +23,11 @@ JS 1.5 objects, a `sign` and `date` object are provided.
 ```javascript
 {
     day: "Sunday",
-    day_of_month: "10",
-    day_of_year: "161",
-    full_date: "06-10-2018",
+    dayOfMonth: "10",
+    dayOfYear: "161",
+    fullDate: "06-10-2018",
     month: "June",
-    month_number: "6",
+    monthNumber: "6",
     quarter: "2",
     year: "2018"
 }
@@ -36,7 +36,7 @@ JS 1.5 objects, a `sign` and `date` object are provided.
 Example quote:
 
 ```
-_{{ sign.name }}_: Today, {{ date.day }}, the {{ date.day_of_month }}th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter {{ date.quarter }} of the year, it very well may. The question is: *what will you do about it?*
+_{{ sign.name }}_: Today, {{ date.day }}, the {{ date.dayOfMonth }}th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter {{ date.quarter }} of the year, it very well may. The question is: *what will you do about it?*
 ```
 
 Which is displayed as:
