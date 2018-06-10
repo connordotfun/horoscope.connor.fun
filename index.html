@@ -21,9 +21,11 @@
                             v-on:click="showDetails(sign)">
                             <div class="sign-content">
                                 <div class="sign-table">
+                                    <img class='sign-image' v-bind:src="'assets/signs/' + sign.name + '.svg'" />
                                     <div class="sign-table-cell">
                                         {{ sign.name }}
                                     </div>
+
                                 </div>
                             </div>
                         </div>
