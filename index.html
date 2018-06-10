@@ -19,7 +19,13 @@
                     <div id="selection-grid">
                         <div class="sign-container" v-for="sign in signs" 
                             v-on:click="showDetails(sign)">
-                                {{ sign.name }}
+                            <div class="sign-content">
+                                <div class="sign-table">
+                                    <div class="sign-table-cell">
+                                        {{ sign.name }}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

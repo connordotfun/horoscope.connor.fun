@@ -39,13 +39,31 @@ body, html {
 .sign-container {
     float:left;
     position: relative;
-    width: 12.6%;
-    padding-bottom: 12.6%; /* = width for a 1:1 aspect ratio */
-    margin:1.66%;
+    height: 37%;
+    width: 13%;
+    margin: 1.66%;
     overflow:hidden;
     background-color: aqua;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.sign-content {
+    position:absolute;
+    height:80%; /* = 100% - 2*10% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 10% 5%;
+}
+.sign-table{
+    display:table;
+    height:100%;
+    width:100%;
+}
+.sign-table-cell{
+    display:table-cell;
+    vertical-align:middle;
+    height:100%;
+    width:100%;
 }
 
 #back-button {
