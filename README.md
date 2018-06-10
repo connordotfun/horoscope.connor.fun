@@ -32,3 +32,16 @@ JS 1.5 objects, a `sign` and `date` object are provided.
     year: "2018"
 }
 ```
+
+Example quote:
+
+```
+_{{ sign.name }}_: Today, {{ date.day }}, the {{ date.day_of_month }}th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter {{ date.quarter }} of the year, it very well may. The question is: *what will you do about it?*
+```
+
+Which is displayed as:
+
+_Aquarius_: Today, Sunday, the 10th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter 2 of the year, it very well may. The question is: **what will you do about it?**
+
+
+Currently, horoscope quotes are combined with a random brand quote, so make sure it'll make sense.
