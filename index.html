@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>horoscope.connor.fun</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
+        
+        <div id="particles-js">
+
+        </div>
+        <div id="content-container">
+            <div id="title">{{ page_title }}</div>
+            <div id="back-button" v-on:click="showSelection" v-if="!selection_mode">Back</div>
+            <div id="detail-content">
+                <div class="content" v-if="selection_mode">
+                    <div id="selection-grid">
+                        <div class="sign-container" v-for="sign in signs" 
+                            v-on:click="showDetails(sign)">
+                                {{ sign.name }}
+                        </div>
+                    </div>
+                </div>
+                <div class="content" v-else>
+                    <horoscope></horoscope>
+                </div>
+            </div>
+            <div id="productinfo">
+                    A <a href="https://connor.fun" target="_blank"><img src="assets/connorfunlogo.png"></a> Product
+            </div>
+        </div>
+
+
+        <script src="js/util.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+        <script>
+            particlesJS.load('particles-js', 'assets/particles.json', function() {
+                console.log('callback - particles.js config loaded');
+            });
+        </script>
+    </body>
+</html>

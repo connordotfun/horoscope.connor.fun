@@ -1,0 +1,3 @@
+This is a bespoke horoscope quote.
+This horoscope knows you clicked {{ sign.name }}.
+This horoscope knows what you did.

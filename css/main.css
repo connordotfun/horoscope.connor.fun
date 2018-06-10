@@ -1,0 +1,74 @@
+
+body, html {
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+    display: grid;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#content-container {
+    background-color: white;
+    border-radius: 15px;
+    opacity: 0.85;
+    resize: both;
+    width: 65%;
+    height: 65%;
+    margin: auto;
+    padding: 1em;
+    position: relative;
+}
+
+#title {
+    font-size: 28px;
+    font-style: oblique;
+    margin: 0px;
+    display: inline;
+    padding-bottom: 5px;
+}
+
+.content {
+    width: 100%;
+}
+
+.sign-container {
+    float:left;
+    position: relative;
+    width: 12.6%;
+    padding-bottom: 12.6%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    overflow:hidden;
+    background-color: aqua;
+    cursor: pointer;
+}
+
+#back-button {
+    padding: 10px;
+    background-color: aqua;
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+#productinfo {
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 8px;
+    float: right;
+    padding-top: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+#productinfo img {
+   max-height: 75px;
+   resize: both;
+   vertical-align: middle;
+   display: inline-block;
+}
