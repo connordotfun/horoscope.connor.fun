@@ -10,7 +10,7 @@ JS 1.5 objects, a `sign` and `date` object are provided.
 
 `sign` provides the name and details of the correct astral sign:
 
-```json
+```javascript
 {
     name: "Aquarius",
     start: "01-20",
@@ -20,7 +20,7 @@ JS 1.5 objects, a `sign` and `date` object are provided.
 
 `date` provides the date in several useful formats:
 
-```json
+```javascript
 {
     day: "Sunday",
     day_of_month: "10",
