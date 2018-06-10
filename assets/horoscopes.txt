@@ -2,3 +2,4 @@ This is a bespoke horoscope quote.
 This horoscope knows you clicked {{ sign.name }}.
 This horoscope knows what you did.
 _{{ sign.name }}_: Today, {{ date.day }}, the {{ date.dayOfMonth }}th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter {{ date.quarter }} of the year, it very well may. The question is: *what will you do about it?*
+{{ sign.name }}: Will today's decisions have consequences for your love life?
