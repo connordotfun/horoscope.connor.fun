@@ -102,7 +102,13 @@ var app = new Vue({
 Vue.component('horoscope', {
     render: function (createElement) {
         this.template = Vue.compile(getRandomQuote());
-        this.template.data = function() {return {sign: currentSign}};
+        this.template.data = function() {
+            return {
+                sign: currentSign,
+                date: makeDateUtility(),
+            }
+        };
+
         return createElement(this.template);
     },
 

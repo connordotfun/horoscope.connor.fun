@@ -34,3 +34,19 @@ function getRandomQuote() {
     horoscope = horoscopequotes[Math.floor(Math.random()*horoscopequotes.length)] + " " + brandquotes[Math.floor(Math.random()*brandquotes.length)];
     return mdconverter.makeHtml(horoscope);
 }
+
+function makeDateUtility() {
+    date = {
+        full_date: moment().format("MM-DD-YYYY"),
+        day: moment().format("dddd"),
+        month: moment().format("MMMM"),
+        day_of_month: moment().format("DD"),
+        day_of_year: moment().format("DDD"),
+        quarter: moment().format("Q"),
+        year: moment().format("YYYY"),
+        month_number: moment().format("M")
+    }
+    console.log(date);
+    return date;
+}
+
