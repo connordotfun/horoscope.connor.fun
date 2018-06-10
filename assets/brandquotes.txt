@@ -1,3 +1,4 @@
 Expect 4-5 days for [connor.fun](http://connor.fun) products to ship.
 This is another brand quote.
 This brand quote knows that you clicked on {{ sign.name }}.
+This brand quote can do math: 2 + 2 = {{ 2 + 2 }}.

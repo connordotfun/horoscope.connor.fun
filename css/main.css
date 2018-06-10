@@ -45,6 +45,7 @@ body, html {
     overflow:hidden;
     background-color: aqua;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 #back-button {
