@@ -1,5 +1,44 @@
-This is a bespoke horoscope quote.
-This horoscope knows you clicked {{ sign.name }}.
 This horoscope knows what you did.
 _{{ sign.name }}_: Today, {{ date.day }}, the {{ date.dayOfMonth }}th of the month, Mercury runs in retrograde. You wonder whether this effects your love life. Since it's quarter {{ date.quarter }} of the year, it very well may. The question is: *what will you do about it?*
 {{ sign.name }}: Will today's decisions have consequences for your love life?
+The changes happening in your life may seem scary, {{ sign.name }}. These challenges may seem insurmountable. It may look like you're not going to make it out of this one, this time. 
+Make like a tree and grow down and up at the same time. Look within and without for changes you can make for the better.
+Stop being late all the time, {{ sign.name }}. 
+One of these days, your actions will have consequences, {{ sign.name }}. It's up to you to decide your actions, because you definitely can't change the consequences. 
+{{date.month}} is a time when people spend a lot of money. Remember to make the best choices for yourself. 
+{{sign.name}}: Enigmatic, mysterious, and full of cheese.
+In {{date.month}} of this year, Mars runs in retrograde. Watch out for people backing up their cars.
+{{date.month}} is a time for success, {{sign.name}}. Soar like a bird. Shine like a diamond. Proliferate like a cliche.
+{{sign.name}}, call your mother. She misses you.
+{{sign.name}}, {{date.day}} is a great day to listen to Paul Simon. Maybe give him a go. It'll make you feel better.
+Don't forget to care for yourself, because you're you forever. Make yourself your own best friend. Take yourself out for a treat sometime. You has been having a hard time, and needs a friend right now. That friend is you.
+Twitter was a mistake. You know it, I know it. Avoid it this month.
+It's always okay to go see a movie alone.
+Stay hydrated
+Seriously, stay hydrated, {{sign.name}}
+In {{date.month}} Jupiter is high in the sky. Keep an eye out for that.
+{{sign.name}}, you are amazing. Really. Everyone thinks so, they told me personally. Keep up the good work.
+It's a good day to go for a nice walk. Unless it's really bad weather, in which case it's a good day to stay inside and read.
+If you're looking for a sign to exersize more, this is it, {{sign.name}}. Off you go.
+Take a deep breath and just do that thing you're avoiding.
+Don't be a jerk today. Or any day.
+{{sign.name}}, put your phone or computer down and just go outside, today. Give your eyes a break.
+Dogs will love you today. Dogs will always love you, because dogs are great like that. 
+I know you're afraid. We all are, secretly.
+Don't be afraid to tell that one jerk to leave you alone.
+{{date.month}} is a time of transition, {{sign.name}}. So maybe you should feel free to try a new style, or that new Thai place you've been eying. If everything else is changing, why can't you?
+Get plenty of sleep. You'll need it.
+Tip 20% this week. It will come back around.
+Make like the sun and shine, bringing light to everyone on Earth.
+Make like the moon and disappear for a few days a month.
+{{sign.name}}, watch your back. The stars are out to get you this week.
+Tonight is a great night to sleep.
+Quit procrastinating, {{sign.name}}. It's not good for you. Just finish whatever you're putting off.
+Humans like to go fast, {{sign.name}}. Maybe try going fast at some point. It's pretty great.
+{{sign.name}}s are adventurous. Find someone to adventure with and have fun!
+If you're looking for a sign, this is it. 
+This is a sign. Of what, I'm not sure, but whatever it is, I'm sure you'll do great.
+Shake it all off.
+Your lucky number is 23.4. A pretty unusual one, to be sure, but it's all you got.
+{{date.day}} means that Venus sets early. That means it's a great day to take a nap.
+
