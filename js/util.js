@@ -46,7 +46,6 @@ function makeDateUtility() {
 }
 
 function makeRNG(sign) {
-    console.log(`${moment().format("dddd")}-${sign.name}`)
     if (Math.seedrandom) { // Check if seedable PRNG library loaded
         // Seed PRNG with current day and provided sign
         return new Math.seedrandom(`${moment().format("MM-DD-YYYY")}-${sign.name}`);
