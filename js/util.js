@@ -1,29 +1,25 @@
 // always loaded first
 
 var mdconverter = new showdown.Converter();
-var brandquotes;
-var horoscopequotes;
+var brandQuotes;
+var horoscopeQuotes;
 
 var loadedCount = 0;
 
-
 var currentSign = null;
 
-$.ajax({
-    url: 'assets/brandquotes.txt',
-    success: function(data) {
-        brandquotes = data.split('\n');
-        loadedCount++;
-    },
-});
 
-$.ajax({
-    url: 'assets/horoscopes.txt',
-    success: function(data) {
-        horoscopequotes = data.split('\n');
-        loadedCount++;
-    },
-});
+
+
+fetch('assets/brandquotes.txt').then(async (res) => {
+    brandQuotes = (await res.text()).split('\n');
+    loadedCount++;
+})
+
+fetch('assets/horoscopes.txt').then(async (res) => {
+    horoscopeQuotes = (await res.text()).split('\n');
+    loadedCount++;
+})
 
 
 function getRandomQuote() {
@@ -31,7 +27,7 @@ function getRandomQuote() {
     if (loadedCount < 2) {
         return mdconverter.makeHtml("Wow, [connor.fun](http://connor.fun) is _so_ cool!");
     }
-    horoscope = horoscopequotes[Math.floor(Math.random()*horoscopequotes.length)] + " " + brandquotes[Math.floor(Math.random()*brandquotes.length)];
+    horoscope = horoscopeQuotes[Math.floor(Math.random()*horoscopeQuotes.length)] + " " + brandQuotes[Math.floor(Math.random()*brandQuotes.length)];
     return mdconverter.makeHtml(horoscope);
 }
 
