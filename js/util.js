@@ -1,37 +1,32 @@
 // always loaded first
 
-var mdconverter = new showdown.Converter();
-var brandquotes;
-var horoscopequotes;
+const mdconverter = new showdown.Converter();
 
-var loadedCount = 0;
+let brandQuotes;
+let horoscopeQuotes;
 
+let loadedQuotes = false;
+let currentSign = null;
 
-var currentSign = null;
-
-$.ajax({
-    url: 'assets/brandquotes.txt',
-    success: function(data) {
-        brandquotes = data.split('\n');
-        loadedCount++;
-    },
-});
-
-$.ajax({
-    url: 'assets/horoscopes.txt',
-    success: function(data) {
-        horoscopequotes = data.split('\n');
-        loadedCount++;
-    },
-});
+// Promise.all is used here to ensure that both requests are fetched before setting loadedQuotes
+Promise.all([
+    fetch('assets/brandquotes.txt').then(async (res) => {
+        // res.text() returns a promise, so we use async/await to make the code cleaner
+        brandQuotes = (await res.text()).split('\n');
+    }),
+    fetch('assets/horoscopes.txt').then(async (res) => {
+        horoscopeQuotes = (await res.text()).split('\n');
+    })
+]).then(() => {
+    loadedQuotes = true;
+})
 
 
 function getRandomQuote() {
-    console.log("shit got called");
-    if (loadedCount < 2) {
+    if (!loadedQuotes) {
         return mdconverter.makeHtml("Wow, [connor.fun](http://connor.fun) is _so_ cool!");
     }
-    horoscope = horoscopequotes[Math.floor(Math.random()*horoscopequotes.length)] + " " + brandquotes[Math.floor(Math.random()*brandquotes.length)];
+    horoscope = horoscopeQuotes[Math.floor(Math.random()*horoscopeQuotes.length)] + " " + brandQuotes[Math.floor(Math.random()*brandQuotes.length)];
     return mdconverter.makeHtml(horoscope);
 }
 
@@ -46,7 +41,6 @@ function makeDateUtility() {
         year: moment().format("YYYY"),
         monthNumber: moment().format("M")
     }
-    console.log(date);
     return date;
 }
 
