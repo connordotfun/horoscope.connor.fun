@@ -87,7 +87,6 @@ const app = new Vue({
 
         showDetails: function(sign) {
             this.selection_mode = false;
-            console.log(sign);
             currentSign = sign;
             this.page_title = sign.name;
             history.pushState({home: true}, "", window.location);
@@ -113,7 +112,6 @@ Vue.component('horoscope', {
     },
 
     mounted: function() {
-        console.log("mounted");
         this.template = Vue.compile(getRandomQuote()).render;
     }
 });
