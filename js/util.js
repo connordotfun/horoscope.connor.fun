@@ -49,7 +49,7 @@ function makeRNG(sign) {
     console.log(`${moment().format("dddd")}-${sign.name}`)
     if (Math.seedrandom) { // Check if seedable PRNG library loaded
         // Seed PRNG with current day and provided sign
-        return new Math.seedrandom(`${moment().format("dddd")}-${sign.name}`);
+        return new Math.seedrandom(`${moment().format("MM-DD-YYYY")}-${sign.name}`);
     }
     return Math.random; // If good PRNG not available, gracefully fall back to Math.random
 }
