@@ -19,7 +19,7 @@ Seriously, stay hydrated, {{sign.name}}
 In {{date.month}} Jupiter is high in the sky. Keep an eye out for that.
 {{sign.name}}, you are amazing. Really. Everyone thinks so, they told me personally. Keep up the good work.
 It's a good day to go for a nice walk. Unless it's really bad weather, in which case it's a good day to stay inside and read.
-If you're looking for a sign to exersize more, this is it, {{sign.name}}. Off you go.
+If you're looking for a sign to exercise more, this is it, {{sign.name}}. Off you go.
 Take a deep breath and just do that thing you're avoiding.
 Don't be a jerk today. Or any day.
 {{sign.name}}, put your phone or computer down and just go outside, today. Give your eyes a break.
@@ -41,4 +41,8 @@ This is a sign. Of what, I'm not sure, but whatever it is, I'm sure you'll do gr
 Shake it all off.
 Your lucky number is 23.4. A pretty unusual one, to be sure, but it's all you got.
 {{date.day}} means that Venus sets early. That means it's a great day to take a nap.
-
+Everything is going to be okay, {{ sign.name }}.
+Make like this horoscope and get self-referential, {{ sign.name }}.
+Make like a... uh... um... They can't all be winners, {{ sign.name }}.
+Be like JavaScript today, {{ sign.name }}. Do something completely unexpected!
+{{ date.day }}s, am I right, {{ sign.name }}? Yeah. {{ date.day }}s.
