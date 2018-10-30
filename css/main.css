@@ -2,8 +2,9 @@
 body, html {
     background-color: black;
     height: 100%;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
-    display: grid;
 }
 
 #particles-js {
@@ -13,15 +14,15 @@ body, html {
 }
 
 #content-container {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    width: 65%;
+    height: 65%;
+    padding: 1em;
     background-color: white;
     border-radius: 15px;
     opacity: 0.85;
-    resize: both;
-    width: 65%;
-    height: 65%;
-    margin: auto;
-    padding: 1em;
-    position: relative;
 }
 
 #title {
