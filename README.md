@@ -33,6 +33,8 @@ JS 1.5 objects, a `sign` and `date` object are provided.
 }
 ```
 
+`rng` provides a pseudorandom number generator that is seeded with the current date and selected sign. `rng()` returns values between 0 and 1.
+
 Example quote:
 
 ```
