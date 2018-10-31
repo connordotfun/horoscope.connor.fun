@@ -88,6 +88,7 @@ const app = new Vue({
         showDetails: function(sign) {
             this.selection_mode = false;
             currentSign = sign;
+            rng = makeRNG(sign)
             this.page_title = sign.name;
             history.pushState({home: true}, "", window.location);
         },
@@ -105,6 +106,7 @@ Vue.component('horoscope', {
             return {
                 sign: currentSign,
                 date: makeDateUtility(),
+                rng: makeRNG(currentSign)
             }
         };
 

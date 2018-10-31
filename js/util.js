@@ -7,6 +7,7 @@ let horoscopeQuotes;
 
 let loadedQuotes = false;
 let currentSign = null;
+let rng = null;
 
 // Promise.all is used here to ensure that both requests are fetched before setting loadedQuotes
 Promise.all([
@@ -26,7 +27,7 @@ function getRandomQuote() {
     if (!loadedQuotes) {
         return mdconverter.makeHtml("Wow, [connor.fun](http://connor.fun) is _so_ cool!");
     }
-    horoscope = horoscopeQuotes[Math.floor(Math.random()*horoscopeQuotes.length)] + " " + brandQuotes[Math.floor(Math.random()*brandQuotes.length)];
+    horoscope = horoscopeQuotes[Math.floor(rng()*horoscopeQuotes.length)] + " " + brandQuotes[Math.floor(rng()*brandQuotes.length)];
     return mdconverter.makeHtml(horoscope);
 }
 
@@ -42,5 +43,13 @@ function makeDateUtility() {
         monthNumber: moment().format("M")
     }
     return date;
+}
+
+function makeRNG(sign) {
+    if (Math.seedrandom) { // Check if seedable PRNG library loaded
+        // Seed PRNG with current day and provided sign
+        return new Math.seedrandom(`${moment().format("MM-DD-YYYY")}-${sign.name}`);
+    }
+    return Math.random; // If good PRNG not available, gracefully fall back to Math.random
 }
 
